@@ -1,0 +1,30 @@
+<div class="movie-data">
+    <div class="date-navigator">
+        <button id="prevDate">
+            <span class="twemoji"><img src="{{ base_url }}/static/icons/chevron-left.svg"></span>
+            上一天
+        </button>
+        <div class="date-display">
+            <input type="date" id="datePicker" class="date-picker">
+        </div>
+        <button id="nextDate">
+            下一天
+            <span class="twemoji"><img src="{{ base_url }}/static/icons/chevron-right.svg"></span>
+        </button>
+
+        <form>
+            <input type="checkbox" id="showPosters" name="showPosters" value="showPosters" checked>
+            <label for="showPosters">显示海报</label>
+        </form>
+    </div>
+
+    <div id="table-container">
+        <div id="loadingIndicator" class="loading" style="display: none;">
+            正在加载数据...
+        </div>
+        <div id="dataInfo">
+        </div>
+        <table id="dataTable">
+        </table>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+@import url("https://fontsapi.zeoseven.com/488/main/result.css");
+@import url("https://fonts.cdnfonts.com/css/ibm-plex-serif");
+
+body {
+  font-family: "IBM Plex Serif", "Times New Roman", "STDongGuanTi", "Punct Song Body", 思源宋体,
+    "Noto Serif SC", "Songti SC", NSimSun, SimSun, serif;
+  font-weight: normal;
+}
+
+.md-grid {
+  max-width: 90%;
+}
+
+.md-typeset .dataTable {
+  border-radius: 0.1rem;
+  display: inline-block;
+  font-size: 0.64rem;
+  overflow: auto;
+  line-height: 1;
+  touch-action: auto;
+}
+
+.md-typeset .dataTable img {
+  /* max-width: 50%; */
+  max-width: 100px;
+}

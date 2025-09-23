@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+    <meta name="referrer" content="same-origin">
+{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    {% include "partials/movie-section.html" %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script type="module" src="{{ 'static/js/top250.js' | url }}"></script>
+{% endblock %}

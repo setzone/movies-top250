@@ -1,0 +1,64 @@
+# Site information
+site_name: "Cinephile: Top 250 movies"
+site_url: https://fantribe.github.io/movies-top250/
+site_author: FanTribe
+site_description: "Top 250 movies"
+copyright: Copyright &copy; 2023-2025 FanTribe
+# docs_dir: docs/
+
+# Theme
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: static/favicon.ico
+  logo: static/favicon.ico
+  language: "zh"
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.progress
+    - navigation.path
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/tablesort@5.6.0/src/tablesort.min.js
+  - https://cdn.jsdelivr.net/npm/tablesort@5.6.0/dist/sorts/tablesort.date.min.js
+  - https://cdn.jsdelivr.net/npm/tablesort@5.6.0/dist/sorts/tablesort.number.min.js
+  - static/js/tablesort.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/tablesort@5.6.0/tablesort.min.css
+  - static/css/extra.css
+  - static/css/top250.css
+
+nav:
+  - index.md
+  - imdb.md
+  - maoyan.md
+  - tmdb.md
+  - mtime.md
+  - hot-all.md
+  - hot-movie.md
+  - hot-tv.md

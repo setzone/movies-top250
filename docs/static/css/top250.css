@@ -1,0 +1,96 @@
+@import url("https://fontsapi.zeoseven.com/292/main/result.css");
+
+.date-navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.date-navigator button {
+  background-color: var(--md-primary-fg-color);
+  color: #f8f9fa;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.date-navigator button:hover:not(:disabled) {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.date-navigator button:disabled {
+  background-color: var(--md-default-fg-color--lighter);
+  cursor: not-allowed;
+}
+
+.date-navigator button .twemoji {
+  display: flex;
+  align-items: center;
+}
+
+.date-navigator button .twemoji img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.date-display {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--md-typeset-color);
+}
+
+.date-picker {
+  padding: 6px 12px;
+  border: 1px solid var(--md-typeset-color);
+  border-radius: 4px;
+  margin: 0 10px;
+  color: var(--md-typeset-color);
+  background-color: var(--md-default-bg-color);
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#dataTable th,
+#dataTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+#dataTable th {
+  background-color: var(--md-default-bg-color--light);
+  font-weight: 600;
+}
+
+#dataTable tr:hover {
+  background-color: var(--md-default-bg-color--lightest);
+}
+
+#dataTable img {
+  max-width: 150px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+blockquote.top250-quote {
+  font-size: smaller;
+  color: #dc3545;
+  font-family: "LXGW WenKai", "KaiTi", "楷体", "STKaiti", "Kaiti SC", "Kaiti TC", serif;
+}
