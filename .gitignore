@@ -1,0 +1,17 @@
+# macos
+.DS_Store
+
+# linux
+*~
+
+# mkdocs
+/site
+
+# ide
+.vscode/
+.idea/
+
+# local
+temp/
+/movie-doc
+/movie-data
