@@ -1,9 +1,9 @@
 # Site information
 site_name: "Cinephile: Top 250 movies"
-site_url: https://fantribe.github.io/movies-top250/
-site_author: FanTribe
+site_url: !ENV [SITE_URL, "https:///example.com/"]
+# site_author:
 site_description: "Top 250 movies"
-copyright: Copyright &copy; 2023-2025 FanTribe
+copyright: Copyright &copy; 2023-2026
 # docs_dir: docs/
 
 # Theme
@@ -54,6 +54,7 @@ extra_css:
   - static/css/top250.css
 
 nav:
+  - 主页: /movies/
   - index.md
   - imdb.md
   - maoyan.md
